@@ -12,16 +12,16 @@ public class PersonService {
 	public PersonService() {
 		Person p = new Person();
 		p.setId("1");
-		p.setAge(21);
-		p.setFirstName("Steve");
-		p.setLastName("Smith");
+		p.setAge(5);
+		p.setFirstName("Joãozinho");
+		p.setLastName("Júnior");
 		persons.put("1", p);
 
 		p = new Person();
 		p.setId("2");
 		p.setAge(21);
-		p.setFirstName("Steve");
-		p.setLastName("Smith");
+		p.setFirstName("Maria");
+		p.setLastName("Filha");
 		persons.put("2", p);
 	}
 	public Person getPerson(String id) {

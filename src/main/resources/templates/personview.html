@@ -13,7 +13,7 @@
   <body>
      
 	  <div class="container">  
-	   <h1 class="d-flex justify-content-center">Bootstrap page</h1>
+	   <h1 class="d-flex justify-content-center">Educação Financeira Infantil</h1>
 		  <form method="post" th:object="${person}" th:action="@{/persons/addformsave}">
 		  <div class="form-row">
 		    <div class="form-group col-md-12">
@@ -23,21 +23,21 @@
 		  </div>
 		  <div class="form-row">
 		    <div class="form-group col-md-6">
-		      <label for="firstName">First Name</label>
+		      <label for="firstName">Name</label>
 		      <input type="text" class="form-control" id="firstName" placeholder="First Name" th:field="${person.firstName}"></input>
 		    </div>
 		    <div class="form-group col-md-6">
-		      <label for="lastName">Password</label>
+		      <label for="lastName">Sobrenome</label>
 		      <input type="text" class="form-control" id="lastName" placeholder="Last Name" th:field="${person.lastName}"></input>
 		    </div>
 		  </div>
 		  <div class="form-row">
 		    <div class="form-group col-md-12">
-		      <label for="age">Age</label>
+		      <label for="age">Idade</label>
 		      <input type="text" class="form-control" id="age" placeholder="age" th:field="${person.age}"></input>
 		    </div>
 		  </div>
-		  <button type="submit" class="btn btn-primary">Sign in</button>
+		  <button type="submit" class="btn btn-primary">Entrar</button>
 		</form>
 	</div>
 
