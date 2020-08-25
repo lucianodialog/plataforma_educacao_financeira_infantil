@@ -1,53 +1,99 @@
 <!doctype html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"/>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+	integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+	crossorigin="anonymous" />
+<link rel="stylesheet" th:href="@{/css/estilo.css}" />
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-     
-	  <div class="container">  
-	   <h1 class="d-flex justify-content-center">Educação Financeira Infantil</h1>
-		  <form method="post" th:object="${person}" th:action="@{/persons/addformsave}">
-		  <div class="form-row">
-		    <div class="form-group col-md-12">
-		      <label for="id">Id</label>
-		      <input type="text" class="form-control" id="id" placeholder="Id" th:field="${person.id}"></input>
-		    </div>
-		  </div>
-		  <div class="form-row">
-		    <div class="form-group col-md-6">
-		      <label for="firstName">Name</label>
-		      <input type="text" class="form-control" id="firstName" placeholder="First Name" th:field="${person.firstName}"></input>
-		    </div>
-		    <div class="form-group col-md-6">
-		      <label for="lastName">Sobrenome</label>
-		      <input type="text" class="form-control" id="lastName" placeholder="Last Name" th:field="${person.lastName}"></input>
-		    </div>
-		  </div>
-		  <div class="form-row">
-		    <div class="form-group col-md-12">
-		      <label for="age">Idade</label>
-		      <input type="text" class="form-control" id="age" placeholder="age" th:field="${person.age}"></input>
-		    </div>
-		  </div>
-		  <button type="submit" class="btn btn-primary">Entrar</button>
+<title>Hello, world!</title>
+
+
+</head>
+<body>
+
+<nav class="menu">
+   <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+   <label class="menu-open-button" for="menu-open">
+    <span class="lines line-1"></span>
+    <span class="lines line-2"></span>
+    <span class="lines line-3"></span>
+  </label>
+
+
+   <a href="#" class="menu-item blue"> <i class="fa fa-anchor"></i> </a>
+   <a href="#" class="menu-item green"> <i class="fa fa-coffee"></i> </a>
+   <a href="#" class="menu-item red"> <i class="fa fa-heart"></i> </a>
+   <a href="#" class="menu-item purple"> <i class="fa fa-microphone"></i> </a>
+   <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a>
+   <a href="#" class="menu-item lightblue"> <i class="fa fa-headphones"></i> </a>
+</nav>
+<!--  
+<a href="#" class="menu-item blue"> <img src="/images/porquinho.svg"><i class="fa fa-anchor"></i> </a>
+	<div class="container">
+	
+		<h1 class="d-flex justify-content-center" id="titulo">Educação
+			Financeira Infantil</h1>
+		<form method="post" th:object="${person}"
+			th:action="@{/persons/addformsave}">
+			<div class="form-row">
+				<div class="form-group col-md-12">
+					<label for="id">Id</label> <input type="text" class="form-control"
+						id="id" placeholder="Id" th:field="${person.id}"></input>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="firstName">Name</label> <input type="text"
+						class="form-control" id="firstName" placeholder="First Name"
+						th:field="${person.firstName}"></input>
+				</div>
+				<div class="form-group col-md-6">
+					<label for="lastName">Sobrenome</label> <input type="text"
+						class="form-control" id="lastName" placeholder="Last Name"
+						th:field="${person.lastName}"></input>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-12">
+					<label for="age">Idade</label> <input type="text"
+						class="form-control" id="age" placeholder="age"
+						th:field="${person.age}"></input>
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary">Entrar</button>
 		</form>
 	</div>
+	
+	-->
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/resources/static/meu_js.js" />
-    
-  </body>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+		integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+		crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+	<script type="text/javascript" src="/js/meujs.js" /></script>
+
+
+
+
+
+</body>
 </html>

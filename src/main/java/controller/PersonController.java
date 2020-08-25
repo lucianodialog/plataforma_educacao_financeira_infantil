@@ -33,15 +33,12 @@ public class PersonController {
 		model.addAttribute("person", p);
 		return "personview";
 	}
-	
 
 
 	@RequestMapping("addformsave")
 	public String getPerson(Model model,Person p) {
 		System.out.println("Updated first name is "+p.getFirstName());
-
 		System.out.println("Updated last name is "+p.getLastName());
-
 		System.out.println("Updated age is "+p.getAge());
 		return "personview";
 	}
